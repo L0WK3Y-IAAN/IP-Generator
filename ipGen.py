@@ -5,7 +5,7 @@ import random
 
 def ipGenerator():
     def generationAnimation():
-        subprocess.call(['cls'],shell=True)
+        subprocess.call(['cls'],shell=True) #change 'cls' to 'clear' for linux
         print("[+] Generating IP addresses.")
         animation = "|/-\\"
 
@@ -16,7 +16,7 @@ def ipGenerator():
     time.sleep(.5)
     generationAnimation()
 
-    subprocess.call(['cls'],shell=True)
+    subprocess.call(['cls'],shell=True) #change 'cls' to 'clear' for linux
     ipGenNum = int(input("Enter number of IP's to be generated: "))
 
     def ipList():
